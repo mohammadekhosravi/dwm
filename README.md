@@ -28,3 +28,6 @@
 5. [hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/):
 
    This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.
+6. [sticky](https://dwm.suckless.org/patches/sticky/):
+
+   Press MODKEY+s (default) to make a client 'sticky'. A sticky client is visible on all tags.
