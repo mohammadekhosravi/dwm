@@ -25,3 +25,6 @@
 4. [cool autostart](https://dwm.suckless.org/patches/cool_autostart/): 
 
    Autostart program or scripts with DWM startup.
+5. [hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/):
+
+   This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.
