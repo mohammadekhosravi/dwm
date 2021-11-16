@@ -43,4 +43,7 @@
    A group of functions that shift.
 10. [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/):
 
-   Cycle through all layouts.
+     Cycle through all layouts.
+
+11. Added layouts:
+  * [nrowgrid](https://dwm.suckless.org/patches/nrowgrid/)

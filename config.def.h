@@ -51,11 +51,16 @@ static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] *
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
+#define FORCE_VSPLIT 1
+#include "nrowgrid.c"
+
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
+	{ "###",      nrowgrid },
+	/* This NULL NULL should always be the last one*/
 	{ NULL,       NULL },
 };
 
@@ -79,10 +84,10 @@ static const char *termcmd[]  = { "konsole", "--hide-menubar" ,NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_o, shiftviewclients,    { .i = +1 } },
-	{ MODKEY|ShiftMask,             XK_o,	shiftview,         		{ .i = +1 } },
-	{ MODKEY|ShiftMask,             XK_i,	shiftview,         		{ .i = -1 } },
-	{ MODKEY,	                			XK_i, shiftviewclients,    { .i = -1 } },
+	{ MODKEY,                       XK_o, 		 shiftviewclients,   { .i = +1 } },
+	{ MODKEY|ShiftMask,             XK_o,			 shiftview,          { .i = +1 } },
+	{ MODKEY|ShiftMask,             XK_i,			 shiftview,          { .i = -1 } },
+	{ MODKEY,	                			XK_i,			 shiftviewclients,   { .i = -1 } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
@@ -102,8 +107,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY|ControlMask,		XK_comma,  cyclelayout,    {.i = -1 } },
-	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
+	{ MODKEY|ControlMask,						XK_comma,  cyclelayout,    {.i = -1 } },
+	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +0 } },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_s,      togglesticky,   {0} },
