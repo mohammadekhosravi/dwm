@@ -67,3 +67,6 @@
 ********
 ### Keybindings:
 **For information on keybinding please read the `config.def.h` source code**.
+********
+### Floating:
+**I Commented out all floating related keybindings so if you want to use them, uncomment them.**
