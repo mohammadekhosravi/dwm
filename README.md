@@ -38,3 +38,6 @@
 
    Gaps between windows.</br>
    **Compatible with _pertag_.**
+9. [shift tools](https://dwm.suckless.org/patches/shift-tools/):
+
+   A group of functions that shift.
