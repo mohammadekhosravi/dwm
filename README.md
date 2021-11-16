@@ -51,3 +51,4 @@
 12. Added layouts:
   * [nrowgrid](https://dwm.suckless.org/patches/nrowgrid/)
   * [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/)
+  * [bottomstack](https://dwm.suckless.org/patches/bottomstack/)
