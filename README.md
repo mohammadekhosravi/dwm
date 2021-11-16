@@ -41,3 +41,6 @@
 9. [shift tools](https://dwm.suckless.org/patches/shift-tools/):
 
    A group of functions that shift.
+10. [cyclelayouts](https://dwm.suckless.org/patches/cyclelayouts/):
+
+   Cycle through all layouts.
