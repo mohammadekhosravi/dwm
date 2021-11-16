@@ -30,6 +30,7 @@ static const unsigned int alphas[][3]      = {
 static const char *const autostart[] = {
 	"picom", "--experimental-backend", NULL,
 	"nitrogen", "--restore", NULL,
+	"xsetroot", "-name", " DWM ",
 	NULL /* terminate */
 };
 
