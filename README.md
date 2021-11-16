@@ -64,3 +64,6 @@
 2. cd dwm
 3. sudo make clean install
 ```
+********
+### Keybindings:
+**For information on keybinding please read the `config.def.h` source code**.
