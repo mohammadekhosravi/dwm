@@ -45,5 +45,8 @@
 
      Cycle through all layouts.
 
-11. Added layouts:
+11. [floatrules](https://dwm.suckless.org/patches/floatrules/):
+
+     Set measurements for floating window.
+12. Added layouts:
   * [nrowgrid](https://dwm.suckless.org/patches/nrowgrid/)
