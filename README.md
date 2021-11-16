@@ -7,6 +7,10 @@
 2. nitrogen
 
    Nitrogen is used for setting background image for the first time and restoring it on each new session.
+3. konsole
+
+   Konsole is default terminal of KDE Desktop environment if you wish to use another termianl emulator change
+  `termcmd` inside `config.def.h` 
 
    **Note that I patch DWM in a way that you can define all the thing that you need to start with DWM inside config file itself. Thanks to [this](https://dwm.suckless.org/patches/cool_autostart/).**
 
@@ -52,3 +56,11 @@
   * [nrowgrid](https://dwm.suckless.org/patches/nrowgrid/)
   * [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/)
   * [bottomstack](https://dwm.suckless.org/patches/bottomstack/)
+********
+### How to install:
+**Make sure that you have `make` installed**
+```bash
+1. git clone https://github.com/mohammadekhosravi/dwm
+2. cd dwm
+3. sudo make clean install
+```
