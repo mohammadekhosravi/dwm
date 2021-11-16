@@ -50,3 +50,4 @@
      Set measurements for floating window.
 12. Added layouts:
   * [nrowgrid](https://dwm.suckless.org/patches/nrowgrid/)
+  * [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/)
