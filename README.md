@@ -52,7 +52,12 @@
 11. [floatrules](https://dwm.suckless.org/patches/floatrules/):
 
      Set measurements for floating window.
-12. Added layouts:
+
+12. [centretitle](https://dwm.suckless.org/patches/centretitle/):
+
+    Place the title of focused client in the middle of barwin.
+
+13. Added layouts:
   * [nrowgrid](https://dwm.suckless.org/patches/nrowgrid/)
   * [centeredmaster](https://dwm.suckless.org/patches/centeredmaster/)
   * [bottomstack](https://dwm.suckless.org/patches/bottomstack/)
