@@ -59,13 +59,13 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
-	/* { "><>",      NULL },    /1* no layout function means floating behavior *1/ */
 	{ "[M]",      monocle },
 	{ "###",      nrowgrid },
 	{ "|M|",      centeredmaster },
 	/* { ">M>",      centeredfloatingmaster }, */
 	{ "TTT",      bstack },
 	{ "===",      bstackhoriz },
+	{ "><>",      NULL },    /* no layout function means floating behavior */
 	/* This NULL NULL should always be the last one*/
 	{ NULL,       NULL },
 };
@@ -151,6 +151,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      setlayout,      {.v = &layouts[3]} },
 	{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[4]} },
 	{ MODKEY|ShiftMask,             XK_s,      setlayout,      {.v = &layouts[5]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[6]} },
 
 	/* ****************************************************************************/
 														/* Patches Functionality */
