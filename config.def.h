@@ -101,6 +101,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "konsole", "--hide-menubar", NULL };
 static const char *webcmd[]  = { "google-chrome", NULL };
+static const char *firefox[] = {"firefox", NULL};
 #include "shift-tools.c"
 
 static Key keys[] = {
@@ -113,6 +114,7 @@ static Key keys[] = {
 	{ MODKEY,		 			              XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = webcmd } },
+	{ MODKEY,                       XK_z,      spawn,          {.v = firefox } },
 	/* Make it Master window */
 	{ MODKEY|ShiftMask,             XK_Return,  zoom,           {0} },
 	{ MODKEY,                       XK_c,      killclient,     {0} },
