@@ -7,9 +7,9 @@
 2. nitrogen
 
    Nitrogen is used for setting background image for the first time and restoring it on each new session.
-3. konsole
+3. alacritty
 
-   Konsole is default terminal of KDE Desktop environment if you wish to use another termianl emulator change
+   if you wish to use another termianl emulator change
   `termcmd` inside `config.def.h` 
 
    **Note that I patch DWM in a way that you can define all the thing that you need to start with DWM inside config file itself. Thanks to [this](https://dwm.suckless.org/patches/cool_autostart/).**
