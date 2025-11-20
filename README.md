@@ -4,17 +4,16 @@
 1. picom
 
    Picom is a compositor for X, and it is used for transparency and some other stuff that I don't know.
-2. nitrogen
-
-   Nitrogen is used for setting background image for the first time and restoring it on each new session.
-3. alacritty
+2. konsole
 
    if you wish to use another termianl emulator change
   `termcmd` inside `config.def.h` 
 
    **Note that I patch DWM in a way that you can define all the thing that you need to start with DWM inside config file itself. Thanks to [this](https://dwm.suckless.org/patches/cool_autostart/).**
 
-   *Remove the line invole picom and nitrogen if you don't want them.*
+   *Remove the line involve picom and nitrogen if you don't want them.*
+3. dmenu
+   
 **********
 ### Patches:
 1. [activatetagindicatorbar](https://dwm.suckless.org/patches/activetagindicatorbar/):
@@ -67,7 +66,8 @@
 ```bash
 1. git clone https://github.com/mohammadekhosravi/dwm
 2. cd dwm
-3. sudo make clean install
+3. sudo rm config.h
+4. sudo make clean install
 ```
 ********
 ### Keybindings:
